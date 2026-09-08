@@ -1,0 +1,34 @@
+# Credentials & Secrets
+*.env
+.env
+.env.local
+*.token
+*.key
+secrets/
+credentials.json
+
+# Node
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# n8n
+.n8n
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/

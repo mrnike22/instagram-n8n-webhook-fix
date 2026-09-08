@@ -1,0 +1,71 @@
+{
+  "available_webhook_fields": {
+    "comments": {
+      "description": "Novos comentários em posts/reels",
+      "event": "comment",
+      "payload": {
+        "senderId": "123456789",
+        "commentId": "987654321",
+        "mediaId": "111222333",
+        "text": "Comentário aqui"
+      }
+    },
+    "messages": {
+      "description": "DMs (mensagens diretas)",
+      "event": "message",
+      "payload": {
+        "senderId": "123456789",
+        "messageId": "aWdfZAG...",
+        "text": "Olá!",
+        "isEcho": false
+      }
+    },
+    "messaging_postbacks": {
+      "description": "Postbacks (botões em mensagens)",
+      "event": "postback",
+      "payload": {
+        "senderId": "123456789",
+        "postbackPayload": "DEVELOPER_DEFINED_PAYLOAD"
+      }
+    },
+    "messaging_optins": {
+      "description": "Opt-ins (consentimento)",
+      "event": "opt_in",
+      "payload": {
+        "senderId": "123456789"
+      }
+    },
+    "mentions": {
+      "description": "Menções do seu perfil",
+      "event": "mention",
+      "payload": {
+        "senderId": "123456789",
+        "mediaId": "111222333",
+        "text": "@seu_perfil ..."
+      }
+    },
+    "live_comments": {
+      "description": "Comentários em lives (transmissões ao vivo)",
+      "event": "live_comment",
+      "payload": {
+        "senderId": "123456789",
+        "commentId": "987654321",
+        "liveId": "555666777",
+        "text": "Que legal!"
+      }
+    }
+  },
+  "recommended_for_n8n": [
+    "comments",
+    "messages",
+    "messaging_postbacks",
+    "messaging_optins",
+    "mentions",
+    "live_comments"
+  ],
+  "minimal_setup": [
+    "comments",
+    "messages"
+  ],
+  "usage_in_fetch_script": "const webhookFields = \"comments,messages,messaging_postbacks,messaging_optins,mentions,live_comments\";"
+}
