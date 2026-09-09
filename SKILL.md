@@ -65,7 +65,7 @@ Como resolver:
 
 No Meta Console, a tela "API setup with Instagram login" mostra dois números parecidos só em formato:
 - **Instagram app ID** (ex. `2150954802502871`) — identifica o APP no Meta, fica no topo da página.
-- **Instagram Business Account ID** (ex. `17841462357933260`) — identifica a CONTA do Instagram, aparece embaixo do nome da conta na seção "2. Generate access tokens".
+- **Instagram Business Account ID** (formato: 17 dígitos numéricos, ex. `17841400000000000`) — identifica a CONTA do Instagram, aparece embaixo do nome da conta na seção "2. Generate access tokens".
 
 **É muito fácil copiar o App ID por engano** e colar no campo "Instagram Business Account ID" da credencial do n8n. Sintoma: token "funciona" (`connection tested successfully` no n8n) mas nada relacionado a webhook funciona, e a API pode até dar erros estranhos de permissão.
 
@@ -89,8 +89,8 @@ Apesar de seguir todos os passos acima corretamente, **a toggle "Webhook Subscri
 
 ```javascript
 // Execute isto em qualquer contexto que tenha acesso a fetch() (ex: console do navegador na aba de developers.facebook.com)
-const igAccountId = "17841478644329280";  // Substituir pelo ID da conta Instagram do cliente
-const accessToken = "IGAAWf2l...";         // O token gerado no passo 4.3
+const igAccountId = "SEU_INSTAGRAM_BUSINESS_ACCOUNT_ID";  // Substituir pelo ID da conta Instagram do cliente
+const accessToken = "IGAA...SEU_TOKEN_AQUI...";            // O token gerado no passo 4.3
 const webhookFields = "comments,messages,messaging_postbacks,messaging_optins,mentions,live_comments";
 
 fetch(`https://graph.instagram.com/v24.0/${igAccountId}/subscribed_apps?subscribed_fields=${webhookFields}&access_token=${accessToken}`, {

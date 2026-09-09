@@ -25,8 +25,8 @@ Mesmo com **tudo correto**:
 
 ```javascript
 // Execute no console do navegador (F12) em developers.facebook.com
-const igAccountId = "17841478644329280";  // Seu Instagram Business Account ID
-const accessToken = "IGAAWf2l...";         // Seu token gerado no Meta Console
+const igAccountId = "SEU_INSTAGRAM_BUSINESS_ACCOUNT_ID";  // Seu Instagram Business Account ID
+const accessToken = "IGAA...SEU_TOKEN_AQUI...";            // Seu token gerado no Meta Console
 const webhookFields = "comments,messages,messaging_postbacks,messaging_optins,mentions,live_comments";
 
 fetch(`https://graph.instagram.com/v24.0/${igAccountId}/subscribed_apps?subscribed_fields=${webhookFields}&access_token=${accessToken}`, {
