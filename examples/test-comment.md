@@ -13,7 +13,7 @@
 Antes de testar, confirme que:
 
 - [ ] Seu workflow `Instagram Trigger` está **publicado** (Published=true)
-- [ ] O `webhookId` no node está correto (ex: `62015b18-5c82-48ef-86be-ce2e92b6df23`)
+- [ ] O `webhookId` no node está correto (ex: `00000000-0000-4000-8000-000000000000`)
 - [ ] A Callback URL no Meta Console aponta pra: `https://seu-n8n-domain.com/webhook/{webhookId}/webhook`
 - [ ] A credencial `instagramAccessTokenApi` tá **salva** no n8n
 
@@ -58,7 +58,7 @@ Procure por uma execução com:
 ```json
 {
   "senderId": "123456789000",
-  "recipientId": "17841478644329280",
+  "recipientId": "17841400000000000",
   "eventType": "comment",
   "commentId": "aWdfZAG1faXRlbTox...",
   "mediaId": "175555555555555",

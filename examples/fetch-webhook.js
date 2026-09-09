@@ -11,8 +11,8 @@
  */
 
 // ============ CONFIGURAÇÃO ============
-const igAccountId = "17841478644329280";  // Substitua pelo seu Instagram Business Account ID
-const accessToken = "IGAAWf2l...";         // Substitua pelo seu token (gerado no Meta Console)
+const igAccountId = "SEU_INSTAGRAM_BUSINESS_ACCOUNT_ID";  // Substitua pelo seu Instagram Business Account ID
+const accessToken = "IGAA...SEU_TOKEN_AQUI...";            // Substitua pelo seu token (gerado no Meta Console)
 const webhookFields = "comments,messages,messaging_postbacks,messaging_optins,mentions,live_comments";
 
 // ============ EXECUTAR ============
@@ -41,7 +41,7 @@ fetch(`https://graph.instagram.com/v24.0/${igAccountId}/subscribed_apps?subscrib
 //
 // 1. Instagram Business Account ID:
 //    - Vai tá embaixo do nome da sua conta na Meta Console
-//    - Exemplo: 17841478644329280
+//    - Formato: 17 dígitos numéricos (ex: 17841400000000000)
 //    - NÃO é o "Instagram app ID" (que fica no topo da página)
 //
 // 2. Access Token:
